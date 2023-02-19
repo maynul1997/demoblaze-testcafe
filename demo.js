@@ -23,3 +23,6 @@ test('Valid Login test', async t => {
         .click(Selector("button").withText("Log in"));
     await t.debug();
 });
+test.only('category test', async t=> {
+    await t.click(Selector("a").withText("Monitors"));
+})
